@@ -1,0 +1,10 @@
+[package]
+name = "echoservice"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+windows-service = "0.8.0"
+windows = { version = "0.60", features = [ "Win32_Networking_WinSock"] }
+thiserror = "1"
+winsafe = { version = "0.0.26", features = ["kernel"] }
